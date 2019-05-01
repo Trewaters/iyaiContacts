@@ -1,6 +1,8 @@
-# "iyaiContact, iyai Contact Management System" - 'Contacts and Connections'
+# "iyaiContact, Contacts and Connections"
 
-version 0.1.0 or [version badge](https://badge.fury.io/)
+version 0.1.0 or [version badge](https://badge.fury.io/hooks/github)
+
+iyai Contact Management System
 
 ## Getting Started
 
