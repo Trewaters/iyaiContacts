@@ -1,0 +1,241 @@
+<form [formGroup]="editFrmContacts" (ngSubmit)="editIyaiContacts()" class="w3-container form">
+  <h1>iyai+ Contacts</h1>
+  <p><i>Input user information to update the iyai contact list.</i></p>
+
+  <fieldset>
+    <legend>Name details</legend>
+    <label for="nmFull">Full Name:
+    <input
+      type="text"
+      formControlName="nmFull"
+      placeholder="Enter Full Name..."
+      required
+      class="w3-input w3-border w3-round"
+      (dblclick)="searchCnt()"
+    /></label><br />
+    *<i>double click the name to show matching contact.</i>
+
+    <label for="nmPref">Preferred Name (nickname):
+    <input
+      type="text"
+      formControlName="nmPref"
+      placeholder="Enter Preferred Name..."
+      required
+      class="w3-input w3-border w3-round"
+    /></label><br />
+  </fieldset>
+
+  <fieldset>
+    <legend>Organization details</legend>
+
+    <label for="orgTitle">Title:
+    <input
+      type="text"
+      formControlName="orgTitle"
+      placeholder="Enter Title at Organization..."
+      class="w3-input w3-border w3-round"
+    /></label>
+    <br />
+
+    <label for="org">Organization:
+    <input
+      type="text"
+      formControlName="org"
+      placeholder="Enter Name of Organization..."
+      class="w3-input w3-border w3-round"
+    /></label><br />
+
+    <label for="orgStatus">iyai+ status:
+    <input
+      type="text"
+      formControlName="orgStatus"
+      placeholder="Enter iyai status..."
+      required
+      list="iyaiStatus"
+      class="w3-input w3-border w3-round"
+    />
+    <datalist id="iyaiStatus">
+      <option value="Board Member"> </option>
+      <option value="Partner"> </option>
+      <option value="Donor"> </option>
+    </datalist>
+  </label>
+    <br />
+
+    <label for="orgWeb">Business Website:
+    <input
+      type="url"
+      formControlName="orgWeb"
+      placeholder="Enter website address ( www.example.com )..."
+      class="w3-input w3-border w3-round"
+    /></label><br />
+  </fieldset>
+
+  <fieldset>
+    <legend>Street Address details</legend>
+
+    <label for="addrHome">Home Address:
+    <input
+      type="text"
+      formControlName="addrHome"
+      placeholder="Enter Home address..."
+      title="EXAMPLE: 4321 Constellation Dr, Fort Collins, CO 98765"
+      class="w3-input w3-border w3-round"
+    /></label>
+    <br />
+
+    <label for="addrMail">Mailing/Business Address:
+    <input
+      type="text"
+      formControlName="addrMail"
+      placeholder="Enter Mailing address..."
+      title="EXAMPLE:  8765 Cedar St, Berkeley, CA 43210"
+      class="w3-input w3-border w3-round"
+    /></label>
+    <br />
+  </fieldset>
+
+  <fieldset>
+    <legend>Email details</legend>
+
+    <label for="emIyai">Email "iyai+":
+    <input
+      type="email"
+      formControlName="emIyai"
+      placeholder="Enter iyai email..."
+      title="format like an email jDoe@email.com"
+      class="w3-input w3-border w3-round"
+    /></label>
+    <br />
+
+    <label for="emOther">Email "other":
+    <input
+      type="email"
+      pattern="[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?"
+      formControlName="emOther"
+      placeholder="Enter other/alternate email..."
+      title="format like an email jDoe@email.com"
+      class="w3-input w3-border w3-round"
+    /></label>
+    <br />
+
+    <label for="emPref">Email Preferred:
+    <input
+      type="email"
+      pattern="[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?"
+      formControlName="emPref"
+      placeholder="Enter Preferred email..."
+      required
+      title="format like an email jDoe@email.com"
+      class="w3-input w3-border w3-round"
+    /></label>
+    <br />
+  </fieldset>
+
+  <fieldset>
+    <legend>Phone Number details</legend>
+    <label for="phIyai">Phone Number "iyai+":
+    <input
+      type="tel"
+      formControlName="phIyai"
+      placeholder="Enter iyai phone number..."
+      pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+      title="EXAMPLE: 123-456-7890"
+      class="w3-input w3-border w3-round"
+    /></label>
+    <br />
+
+    <label for="phMob">Phone Number "mobile":
+    <input
+      type="tel"
+      formControlName="phMob"
+      placeholder="Enter Mobile Phone Number..."
+      pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+      title="EXAMPLE: 123-456-7890"
+      class="w3-input w3-border w3-round"
+    /></label>
+    <br />
+
+    <label for="phHome">Phone Number "home":
+    <input
+      type="tel"
+      formControlName="phHome"
+      placeholder="Enter Home Phone Number..."
+      pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+      title="EXAMPLE: 123-456-7890"
+      class="w3-input w3-border w3-round"
+    /></label>
+    <br />
+
+    <label for="phOff">Phone Number "office":
+    <input
+      type="tel"
+      formControlName="phOff"
+      placeholder="Enter Office Phone Number..."
+      pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+      title="EXAMPLE: 123-456-7890"
+      class="w3-input w3-border w3-round"
+    /></label>
+    <br />
+
+    <label for="phFax">Phone Number "fax":
+    <input
+      type="tel"
+      formControlName="phFax"
+      placeholder="Enter Fax Phone Number..."
+      pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+      title="EXAMPLE: 123-456-7890"
+      class="w3-input w3-border w3-round"
+    /></label>
+    <br />
+
+    <label for="phPref">Phone Number Preferred:
+    <input
+      type="tel"
+      formControlName="phPref"
+      placeholder="Enter Preferred Phone Number..."
+      pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+      title="EXAMPLE: 123-456-7890"
+      class="w3-input w3-border w3-round"
+    /></label>
+    <br />
+  </fieldset>
+
+  <fieldset>
+    <legend>Admin Supoort details</legend>
+    <label for="supName">Admin Support Name:
+    <input
+      type="text"
+      formControlName="supName"
+      placeholder="Enter Admin Support Full Name..."
+      class="w3-input w3-border w3-round"
+    /></label>
+    <br />
+
+    <label for="supEmail">Admin Support Email:
+    <input
+      type="text"
+      formControlName="supEmail"
+      placeholder="Enter Admin Support Email..."
+      class="w3-input w3-border w3-round"
+    /></label>
+    <br />
+
+    <label for="supPhone">Admin Support Phone Number:
+    <input
+      type="tel"
+      formControlName="supPhone"
+      placeholder="Enter Admin Support Phone Number...123-456-7890"
+      pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+      title="EXAMPLE: 123-456-7890"
+      class="w3-input w3-border w3-round"
+    /></label>
+    <br />
+  </fieldset>
+<!--
+  <input type="radio" class="w3-radio" formControlName="flag" value="mongo" />local MongoDB<br>
+  <input type="radio" class="w3-radio" formControlName="flag" value="memory" />in memory(test mode)<br> -->
+
+  <br />
+  <input type="submit" class="w3-button w3-blue w3-round w3-ripple" value="Save changes" />
+</form>

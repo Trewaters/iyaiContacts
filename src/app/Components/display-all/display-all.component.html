@@ -1,0 +1,26 @@
+
+<table class="w3-table-all w3-hoverable w3-hover-aqua tblWidth">
+  <thead>
+  <tr class="w3-blue">
+      <td>Full Name</td>
+      <td>Name Preference</td>
+      <td>Organization Status</td>
+      <td>Email Preference</td>
+      <td>Phone Preference</td>
+      <td>dbVersion</td>
+  </tr>
+  </thead>
+
+  <tbody>
+      <tr *ngFor="let contact of contacts">
+          <td>{{ contact.nmFull }}</td>
+          <td>{{ contact.nmPref }}</td>
+          <td>{{ contact.orgStatus}}</td>
+          <td>{{ contact.emPref }}</td>
+          <td>{{ contact.phPref }}</td>
+          <td>{{ contact.version }}</td>
+      </tr>
+  </tbody>
+</table>
+
+<button (click)="exportContacts()">EXPORT DATA</button>

@@ -1,0 +1,29 @@
+<form [formGroup]="frmDelete" (ngSubmit)="searchContacts()" class="w3-container">
+  <fieldset>
+    <legend>Double Click to delete contact</legend>
+    <label for="searchCon">use entire name:
+      <br>
+      <input type="text" name="searchCon" formControlName="ctlSearch" placeholder="Search..." class="w3-input w3-border" />
+      <button type="submit" class="w3-button w3-blue w3-round w3-ripple">
+        <i class="fa fa-search"></i>
+      </button>
+    </label>
+  </fieldset>
+</form>
+
+<table class="w3-table-all">
+  <thead>
+    <tr class="w3-blue">
+      <td>Full Name</td>
+      <td>Email Preference</td>
+      <td>Document Version</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let contact of contacts">
+      <td (dblclick)="deleteCnt(contact._id)">{{contact.nmFull}}</td>
+      <td (dblclick)="deleteCnt(contact._id)">{{contact.emPref}}</td>
+      <td (dblclick)="deleteCnt(contact._id)">{{contact.version}}</td>
+    </tr>
+  </tbody>
+</table>

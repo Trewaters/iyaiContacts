@@ -1,0 +1,20 @@
+<div class="w3-center">
+  <h1>
+    Welcome to iayi+ <br>
+    {{ title }}!
+  </h1>
+  <img width="60%" alt="iyai+ Logo" src="https://www.iyai.org/wp-content/uploads/2018/07/iyai-h4.jpg">
+</div>
+
+<nav class="w3-bar w3-center w3-blue">
+  <button routerLink="contactForm" class="w3-button w3-round w3-ripple">Create Contact</button>
+<button routerLink="displayAll" class="w3-button w3-round w3-ripple">displayAll</button>
+<button routerLink="importZoho" class="w3-button w3-round w3-ripple">importZoho</button>
+<button routerLink="search" class="w3-button w3-round w3-ripple">search</button>
+<button routerLink="editContact" class="w3-button w3-round w3-ripple">Edit Contact</button>
+<button routerLink="deleteContact" class="w3-button w3-round w3-ripple">Delete Contact</button>
+</nav>
+
+<div>
+  <router-outlet></router-outlet>
+</div>

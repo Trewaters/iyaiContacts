@@ -1,0 +1,9 @@
+<p>Select a local Zoho ".csv" file:</p>
+
+<form [formGroup]="impZoho" (ngSubmit)="onSubmit()">
+  <input type="file" (change)="onFileChange($event)" />
+  <!-- <button type="submit" [disabled]="impZoho.invalid">Import CSV</button> -->
+  <button type="submit">Import CSV</button>
+</form>
+
+<div id="out" [innerHTML]='vSafeHtml'>   </div>
