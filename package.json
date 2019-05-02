@@ -1,6 +1,8 @@
 {
-  "name": "basic",
-  "version": "0.0.0",
+  "name": "iyai-contacts",
+  "version": "1.0.0",
+  "description": "Contacts and Connections. Manages contacts in a central location. Open Source Software.",
+  "homepage": "https://github.com/Trewaters/iyaiContacts#readme",
   "scripts": {
     "ng": "ng",
     "start": "node app",
