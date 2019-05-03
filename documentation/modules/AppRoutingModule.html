@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>basic documentation</title>
+        <title>iyai-contacts documentation</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -13,7 +13,7 @@
     <body>
 
         <div class="navbar navbar-default navbar-fixed-top visible-xs">
-            <a href="../" class="navbar-brand">basic documentation</a>
+            <a href="../" class="navbar-brand">iyai-contacts documentation</a>
             <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
         </div>
 
@@ -77,19 +77,24 @@ import { PageNotFoundComponent } from &#x27;./Components/page-not-found/page-not
 import { DisplayAllComponent } from &#x27;./Components/display-all/display-all.component&#x27;;
 import { ImportZohoComponent } from &#x27;./Components/import-zoho/import-zoho.component&#x27;;
 import { SearchComponent } from &#x27;./Components/search/search.component&#x27;;
+import { EditComponent } from &#x27;./Components/edit/edit.component&#x27;;
+import { DeleteCntComponent } from &#x27;./Components/delete-cnt/delete-cnt.component&#x27;;
 
 /**
  *  Routes for the main controls of the application
  */
 const routes: Routes &#x3D; [
   {
-    path:&#x27;contactForm&#x27;,
-    component: ContactFormComponent
+    path: &#x27;contactForm&#x27;,
+    component: ContactFormComponent,
+    data: { title: &#x27;Contact Form&#x27; }
   }
-  ,{path:&#x27;displayAll&#x27;, component: DisplayAllComponent}
-  ,{path:&#x27;importZoho&#x27;, component: ImportZohoComponent}
-  ,{path: &#x27;search&#x27;, component: SearchComponent}
-  ,{path:&#x27;**&#x27;, component: PageNotFoundComponent}
+  , { path: &#x27;displayAll&#x27;, component: DisplayAllComponent, data: { title: &quot;Display Contacts&quot; } }
+  , { path: &#x27;importZoho&#x27;, component: ImportZohoComponent, data: { title: &#x27;Import Zoho Contacts&#x27; } }
+  , { path: &#x27;search&#x27;, component: SearchComponent, data: { title: &#x27;Search Contacts&#x27; } }
+  , { path: &#x27;editContact&#x27;, component: EditComponent, data: { title: &#x27;Edit Contacts&#x27; } }
+  , { path: &#x27;deleteContact&#x27;, component: DeleteCntComponent, data: { title: &#x27;Delete Contacts&#x27; } }
+  , { path: &#x27;**&#x27;, component: PageNotFoundComponent, data: { title: &#x27;PAGE NOT FOUND!&#x27; } }
 ];
 
 @NgModule({

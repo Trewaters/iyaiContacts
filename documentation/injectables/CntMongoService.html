@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>basic documentation</title>
+        <title>iyai-contacts documentation</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -13,7 +13,7 @@
     <body>
 
         <div class="navbar navbar-default navbar-fixed-top visible-xs">
-            <a href="../" class="navbar-brand">basic documentation</a>
+            <a href="../" class="navbar-brand">iyai-contacts documentation</a>
             <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
         </div>
 
@@ -105,6 +105,10 @@
                                 <a href="#getContacts">getContacts</a>
                             </li>
                             <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#handleError">handleError</a>
+                            </li>
+                            <li>
                                 <a href="#searchContacts">searchContacts</a>
                             </li>
                         </ul>
@@ -130,7 +134,7 @@
                 </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="17" class="link-to-prism">src/app/Services/cnt-mongo.service.ts:17</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="23" class="link-to-prism">src/app/Services/cnt-mongo.service.ts:23</a></div>
                             </td>
                         </tr>
 
@@ -195,8 +199,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="21"
-                            class="link-to-prism">src/app/Services/cnt-mongo.service.ts:21</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="34"
+                            class="link-to-prism">src/app/Services/cnt-mongo.service.ts:34</a></div>
                 </td>
             </tr>
 
@@ -254,15 +258,15 @@
             </tr>
             <tr>
                 <td class="col-md-4">
-<code>deleteContact()</code>
+<code>deleteContact(vId)</code>
                 </td>
             </tr>
 
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="50"
-                            class="link-to-prism">src/app/Services/cnt-mongo.service.ts:50</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="78"
+                            class="link-to-prism">src/app/Services/cnt-mongo.service.ts:78</a></div>
                 </td>
             </tr>
 
@@ -271,8 +275,35 @@
                 <td class="col-md-4">
 
                     <div class="io-description">
-                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>vId</td>
 
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
                     </div>
                 </td>
             </tr>
@@ -293,15 +324,15 @@
             </tr>
             <tr>
                 <td class="col-md-4">
-<code>editContact()</code>
+<code>editContact(vEditContact)</code>
                 </td>
             </tr>
 
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="48"
-                            class="link-to-prism">src/app/Services/cnt-mongo.service.ts:48</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="64"
+                            class="link-to-prism">src/app/Services/cnt-mongo.service.ts:64</a></div>
                 </td>
             </tr>
 
@@ -310,8 +341,35 @@
                 <td class="col-md-4">
 
                     <div class="io-description">
-                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>vEditContact</td>
 
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
                     </div>
                 </td>
             </tr>
@@ -339,8 +397,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="29"
-                            class="link-to-prism">src/app/Services/cnt-mongo.service.ts:29</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="43"
+                            class="link-to-prism">src/app/Services/cnt-mongo.service.ts:43</a></div>
                 </td>
             </tr>
 
@@ -351,6 +409,104 @@
                     <div class="io-description">
                         <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
 
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="handleError"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Private</span>
+                            handleError
+                        </b>
+                        <a href="#handleError"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>handleError(operation: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, result?: T)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="27"
+                            class="link-to-prism">src/app/Services/cnt-mongo.service.ts:27</a></div>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <b>Type parameters :</b>
+                    <ul class="type-parameters">
+                        <li>T</li>
+                    </ul>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Default value</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>operation</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+                                    <td>
+                                        <code>&#x27;operation&#x27;</code>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>result</td>
+                                    <td>
+                                            <code>T</code>
+                                    </td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+                                    <td>
+                                    </td>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>(error: any) &#x3D;&gt; any</code>
+
+                    </div>
+                    <div class="io-description">
+                        
                     </div>
                 </td>
             </tr>
@@ -378,8 +534,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="36"
-                            class="link-to-prism">src/app/Services/cnt-mongo.service.ts:36</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="51"
+                            class="link-to-prism">src/app/Services/cnt-mongo.service.ts:51</a></div>
                 </td>
             </tr>
 
@@ -448,7 +604,7 @@
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="17" class="link-to-prism">src/app/Services/cnt-mongo.service.ts:17</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="23" class="link-to-prism">src/app/Services/cnt-mongo.service.ts:23</a></div>
                             </td>
                         </tr>
 
@@ -475,12 +631,12 @@
                     </tr>
                     <tr>
                         <td class="col-md-4">
-                            <i>Default value : </i><code>&#x27;http://localhost:4200/contact/&#x27;</code>
+                            <i>Default value : </i><code>uriCnt</code>
                         </td>
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="14" class="link-to-prism">src/app/Services/cnt-mongo.service.ts:14</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="19" class="link-to-prism">src/app/Services/cnt-mongo.service.ts:19</a></div>
                             </td>
                         </tr>
 
@@ -494,11 +650,16 @@
 
     <div class="tab-pane fade  tab-source-code" id="c-source">
         <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Injectable } from &#x27;@angular/core&#x27;;
-import { HttpClient, HttpParams, HttpHeaders } from &#x27;@angular/common/http&#x27;;
-import { Observable } from &#x27;rxjs/Observable&#x27;;
+import { HttpClient, HttpHeaders, HttpErrorResponse } from &#x27;@angular/common/http&#x27;;
+import { Observable, of, throwError } from &#x27;rxjs&#x27;;
+import { catchError, tap, map } from &#x27;rxjs/operators&#x27;;
 import &#x27;rxjs/add/operator/map&#x27;;
 import { cntIyai } from &#x27;../Models/contact&#x27;;
 
+const httpOptions &#x3D;{
+  headers: new HttpHeaders({&#x27;Content-Type&#x27;: &#x27;application/json&#x27;})
+};
+const uriCnt &#x3D; &#x27;http://localhost:4200/contact/&#x27;;
 
 @Injectable({
   providedIn: &#x27;root&#x27;
@@ -506,15 +667,24 @@ import { cntIyai } from &#x27;../Models/contact&#x27;;
 export class CntMongoService {
 
   // uri &#x3D; &#x27;&#x27;
-  uri: string &#x3D; &#x27;http://localhost:4200/contact/&#x27;;
+  uri: string &#x3D; uriCnt;
+  //uri: string &#x3D; &#x27;http://localhost:4200/contact/&#x27;;
   //uri &#x3D; &#x27;./contact/newCnt&#x27;; // add contact to mongodb
 
   contact: cntIyai;
 
   constructor(private http: HttpClient) { }
 
+  private handleError&lt;T&gt;(operation &#x3D; &#x27;operation&#x27;, result?:T){
+    return(error:any): Observable&lt;T&gt; &#x3D;&gt; {
+      console.error(error); // log error to console
+      return of (result as T);
+    }
+  }
+
   addContact(vContact) {
-    this.uri &#x3D; &#x27;http://localhost:4200/contact/addCnt/&#x27;;
+    this.uri&#x3D; &#x27;http://localhost:4200/contact/addCnt/&#x27;;
+    // this.uri +&#x3D; &#x27;addCnt/&#x27;;
     // console.log(&quot;vContact...&quot;, vContact);
     this.contact &#x3D; vContact;
     this.http.post&lt;cntIyai&gt;(this.uri, this.contact)
@@ -522,7 +692,8 @@ export class CntMongoService {
   }
 
   getContacts() {
-    this.uri &#x3D; &#x27;http://localhost:4200/contact/getCnts/&#x27;;
+    this.uri&#x3D; &#x27;http://localhost:4200/contact/getCnts/&#x27;;
+    // this.uri +&#x3D; &#x27;getCnts/&#x27;;
     return this.http.get(this.uri).map(res &#x3D;&gt; {
       return res;
     });
@@ -530,7 +701,8 @@ export class CntMongoService {
 
   searchContacts(nmFull) {
     // console.log(&#x27;CntMongoService-searchContacts-nmFull...\n&#x27;,nmFull.value);
-    this.uri &#x3D; &#x27;http://localhost:4200/contact/searchCnts/&#x27; + nmFull.value;
+    this.uri&#x3D; &#x27;http://localhost:4200/contact/searchCnts/&#x27; + nmFull.value;
+    // this.uri +&#x3D; &#x27;searchCnts/&#x27; + nmFull.value;
     return this
       .http
       .get(this.uri)
@@ -540,9 +712,33 @@ export class CntMongoService {
       })
   }
 
-  editContact() { };
+  editContact(vEditContact) {
+    this.uri&#x3D; &#x27;http://localhost:4200/contact/editCnt/&#x27; + vEditContact.nmFull;
+    // this.uri +&#x3D; &#x27;editCnt/&#x27; + vEditContact.nmFull;
 
-  deleteContact() { };
+    // console.log(&#x27;CntMongoService-vEditContact...\n&#x27;, vEditContact);
+
+    this.contact &#x3D; vEditContact;
+
+    return this
+      .http
+      .post&lt;cntIyai&gt;(this.uri, this.contact)
+      .subscribe((res) &#x3D;&gt; { console.log(&quot;editContact... done&quot;) })
+  };
+
+  deleteContact(vId) {
+    this.uri&#x3D; &#x27;http://localhost:4200/contact/deleteCnt/&#x27; + vId;
+    // this.uri +&#x3D; &#x27;deleteCnt/&#x27; + vId;
+
+    console.log(&quot;deleteContact...this.uri...&quot;, this.uri);
+
+    return this
+    .http
+    .get(this.uri)
+    .map(res &#x3D;&gt;{
+      return res;
+    })
+   };
 }
 </code></pre>
     </div>

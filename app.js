@@ -18,6 +18,10 @@ app.use(bodyParser.urlencoded({ extended: false })); // changed from false in at
 app.use(cors());
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'dist/basic')));
+/**
+ * serving compodoc rendered documentation when server is online.
+*/
+app.use('/docs', express.static(__dirname + '/documentation'));
 
 app.use('/contact', contactRouter);
 

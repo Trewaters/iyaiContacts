@@ -105,6 +105,8 @@ Note that by default all components are aligned with the style guide so you won'
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 
+If you would like to see developer [documentation](http://localhost:4200/docs/index.html) click the link after the server is running. It will show the compodocs that were last rendered for this project.
+
 #### NOTES
 the folders in this are: 
 - **"basic"** is built with the Angular CLI.

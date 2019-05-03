@@ -35,7 +35,7 @@
 
 <ol class="breadcrumb">
   <li>Components</li>
-  <li>ContactFormComponent</li>
+  <li>EditComponent</li>
 </ol>
 
 <ul class="nav nav-tabs" role="tablist">
@@ -61,7 +61,7 @@
     <h3>File</h3>
 </p>
 <p class="comment">
-    <code>src/app/Components/contact-form/contact-form.component.ts</code>
+    <code>src/app/Components/edit/edit.component.ts</code>
 </p>
 
 
@@ -91,19 +91,19 @@
 
             <tr>
                 <td class="col-md-3">selector</td>
-                <td class="col-md-9"><code>app-contact-form</code></td>
+                <td class="col-md-9"><code>app-edit</code></td>
             </tr>
 
             <tr>
                 <td class="col-md-3">styleUrls</td>
-                <td class="col-md-9"><code>./contact-form.component.css</code></td>
+                <td class="col-md-9"><code>./edit.component.css</code></td>
             </tr>
 
 
 
             <tr>
                 <td class="col-md-3">templateUrl</td>
-                <td class="col-md-9"><code>./contact-form.component.html</code></td>
+                <td class="col-md-9"><code>./edit.component.html</code></td>
             </tr>
 
 
@@ -133,10 +133,7 @@
                                 <a href="#contact">contact</a>
                             </li>
                             <li>
-                                <a href="#flag">flag</a>
-                            </li>
-                            <li>
-                                <a href="#frmContact">frmContact</a>
+                                <a href="#editFrmContacts">editFrmContacts</a>
                             </li>
                         </ul>
                     </td>
@@ -154,10 +151,13 @@
                                 <a href="#createForm">createForm</a>
                             </li>
                             <li>
+                                <a href="#editIyaiContacts">editIyaiContacts</a>
+                            </li>
+                            <li>
                                 <a href="#ngOnInit">ngOnInit</a>
                             </li>
                             <li>
-                                <a href="#postIyaiContacts">postIyaiContacts</a>
+                                <a href="#searchCnt">searchCnt</a>
                             </li>
                         </ul>
                     </td>
@@ -177,12 +177,12 @@
             <tbody>
                 <tr>
                     <td class="col-md-4">
-<code>constructor(_fb: <a href="https://angular.io/api/forms/FormBuilder" target="_blank">FormBuilder</a>, cntService: <a href="../injectables/CntMongoService.html">CntMongoService</a>)</code>
+<code>constructor(editService: <a href="../injectables/CntMongoService.html">CntMongoService</a>, _fb: <a href="https://angular.io/api/forms/FormBuilder" target="_blank">FormBuilder</a>)</code>
                     </td>
                 </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="18" class="link-to-prism">src/app/Components/contact-form/contact-form.component.ts:18</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="14" class="link-to-prism">src/app/Components/edit/edit.component.ts:14</a></div>
                             </td>
                         </tr>
 
@@ -200,10 +200,10 @@
                                         </thead>
                                         <tbody>
                                                 <tr>
-                                                        <td>_fb</td>
+                                                        <td>editService</td>
                                                   
                                                         <td>
-                                                                        <code><a href="https://angular.io/api/forms/FormBuilder" target="_blank" >FormBuilder</a></code>
+                                                                        <code><a href="../injectables/CntMongoService.html" target="_self" >CntMongoService</a></code>
                                                         </td>
                                                   
                                                     <td>
@@ -212,10 +212,10 @@
                                                     
                                                 </tr>
                                                 <tr>
-                                                        <td>cntService</td>
+                                                        <td>_fb</td>
                                                   
                                                         <td>
-                                                                        <code><a href="../injectables/CntMongoService.html" target="_self" >CntMongoService</a></code>
+                                                                        <code><a href="https://angular.io/api/forms/FormBuilder" target="_blank" >FormBuilder</a></code>
                                                         </td>
                                                   
                                                     <td>
@@ -263,17 +263,53 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="32"
-                            class="link-to-prism">src/app/Components/contact-form/contact-form.component.ts:32</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="42"
+                            class="link-to-prism">src/app/Components/edit/edit.component.ts:42</a></div>
                 </td>
             </tr>
 
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-description"><p>createForm()</p>
-<p>binds the form data to the form</p>
-</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="editIyaiContacts"></a>
+                    <span class="name">
+                        <b>
+                            editIyaiContacts
+                        </b>
+                        <a href="#editIyaiContacts"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>editIyaiContacts()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="82"
+                            class="link-to-prism">src/app/Components/edit/edit.component.ts:82</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
 
                     <div class="io-description">
                         <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
@@ -305,8 +341,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="24"
-                            class="link-to-prism">src/app/Components/contact-form/contact-form.component.ts:24</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="20"
+                            class="link-to-prism">src/app/Components/edit/edit.component.ts:20</a></div>
                 </td>
             </tr>
 
@@ -326,35 +362,32 @@
         <tbody>
             <tr>
                 <td class="col-md-4">
-                    <a name="postIyaiContacts"></a>
+                    <a name="searchCnt"></a>
                     <span class="name">
                         <b>
-                            postIyaiContacts
+                            searchCnt
                         </b>
-                        <a href="#postIyaiContacts"><span class="icon ion-ios-link"></span></a>
+                        <a href="#searchCnt"><span class="icon ion-ios-link"></span></a>
                     </span>
                 </td>
             </tr>
             <tr>
                 <td class="col-md-4">
-<code>postIyaiContacts()</code>
+<code>searchCnt()</code>
                 </td>
             </tr>
 
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="76"
-                            class="link-to-prism">src/app/Components/contact-form/contact-form.component.ts:76</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="23"
+                            class="link-to-prism">src/app/Components/edit/edit.component.ts:23</a></div>
                 </td>
             </tr>
 
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-description"><p>postIyaiContacts()</p>
-<p>calls the CntMongoService service to store the contact data</p>
-</div>
 
                     <div class="io-description">
                         <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
@@ -395,7 +428,7 @@
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="15" class="link-to-prism">src/app/Components/contact-form/contact-form.component.ts:15</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="14" class="link-to-prism">src/app/Components/edit/edit.component.ts:14</a></div>
                             </td>
                         </tr>
 
@@ -406,43 +439,11 @@
             <tbody>
                 <tr>
                     <td class="col-md-4">
-                        <a name="flag"></a>
+                        <a name="editFrmContacts"></a>
                         <span class="name">
                             <b>
-                            flag</b>
-                            <a href="#flag"><span class="icon ion-ios-link"></span></a>
-                        </span>
-                    </td>
-                </tr>
-                    <tr>
-                        <td class="col-md-4">
-                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String" target="_blank" >String</a></code>
-
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="col-md-4">
-                            <i>Default value : </i><code>&#x27;&#x27;</code>
-                        </td>
-                    </tr>
-                        <tr>
-                            <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/app/Components/contact-form/contact-form.component.ts:16</a></div>
-                            </td>
-                        </tr>
-
-
-            </tbody>
-        </table>
-        <table class="table table-sm table-bordered">
-            <tbody>
-                <tr>
-                    <td class="col-md-4">
-                        <a name="frmContact"></a>
-                        <span class="name">
-                            <b>
-                            frmContact</b>
-                            <a href="#frmContact"><span class="icon ion-ios-link"></span></a>
+                            editFrmContacts</b>
+                            <a href="#editFrmContacts"><span class="icon ion-ios-link"></span></a>
                         </span>
                     </td>
                 </tr>
@@ -454,7 +455,7 @@
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="18" class="link-to-prism">src/app/Components/contact-form/contact-form.component.ts:18</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="13" class="link-to-prism">src/app/Components/edit/edit.component.ts:13</a></div>
                             </td>
                         </tr>
 
@@ -468,38 +469,49 @@
 
     <div class="tab-pane fade  tab-source-code" id="c-source">
         <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit } from &#x27;@angular/core&#x27;;
-import { FormControl, FormGroup, FormBuilder } from &#x27;@angular/forms&#x27;;
-
-import { cntIyai } from &#x27;src/app/Models/contact&#x27;;
 import { CntMongoService } from &#x27;src/app/Services/cnt-mongo.service&#x27;;
+import { FormGroup, FormBuilder, FormControl } from &#x27;@angular/forms&#x27;;
+import { cntIyai } from &#x27;src/app/Models/contact&#x27;;
 
 @Component({
-  selector: &#x27;app-contact-form&#x27;,
-  templateUrl: &#x27;./contact-form.component.html&#x27;,
-  styleUrls: [&#x27;./contact-form.component.css&#x27;]
+  selector: &#x27;app-edit&#x27;,
+  templateUrl: &#x27;./edit.component.html&#x27;,
+  styleUrls: [&#x27;./edit.component.css&#x27;]
 })
+export class EditComponent implements OnInit {
 
-export class ContactFormComponent implements OnInit {
-
+  editFrmContacts: FormGroup;
   contact: cntIyai &#x3D; new cntIyai();
-  flag: String &#x3D;&#x27;&#x27;;
 
-  frmContact: FormGroup;
-
-  constructor(private _fb: FormBuilder, private cntService: CntMongoService ) {
+  constructor(private editService: CntMongoService, private _fb:FormBuilder) {
     this.createForm();
-  }
+   }
 
   ngOnInit() {
   }
 
-  /**
- * createForm()
- *
- * binds the form data to the form
- */
-createForm(){
-    this.frmContact &#x3D; this._fb.group({
+  searchCnt(){
+
+    let searchThis &#x3D; this.editFrmContacts.get(&#x27;nmFull&#x27;);
+
+    this
+    .editService
+    .searchContacts(searchThis)
+    .subscribe( res &#x3D;&gt;{
+      // this.editFrmContacts.setValue(res)
+      this.editFrmContacts.patchValue(res[0]);
+
+      console.log(&quot;res...&quot;,res);
+      // console.log(&quot;searchThis...&quot;,searchThis);
+
+      // this.contact.nmPref &#x3D; res[0].nmPref;
+
+    });
+  }
+
+  createForm(){
+
+    this.editFrmContacts &#x3D; this._fb.group({
       nmFull: new FormControl(this.contact.nmFull),
       nmPref: new FormControl(this.contact.nmPref),
       orgTitle: new FormControl(this.contact.orgTitle),
@@ -532,57 +544,23 @@ createForm(){
       lists: new FormControl(this.contact.lists),
       visibility: new FormControl(this.contact.visibility),
       notes: new FormControl(this.contact.notes),
-      twitter: new FormControl(this.contact.twitter),
-      flag: new FormControl(this.flag)
-    });
+      twitter: new FormControl(this.contact.twitter)
+    })
+
   }
 
-/**
- * postIyaiContacts()
- *
- * calls the CntMongoService service to store the contact data
- */
-  postIyaiContacts() {
-    // console.log(&#x60;frmContact... &#x60;, this.frmContact);
-    // console.log(&#x27;this.frmContact.value...&#x27;, this.frmContact.value);
-    // console.log(&#x27;this.frmContact.value.nmFull...&#x27;, this.frmContact.value.nmFull);
-    // console.log(&#x27;this.frmContact.get(\&#x27;nmFull\&#x27;).value...&#x27;, this.frmContact.get(&#x27;nmFull&#x27;).value);
-    // console.log(&#x27;radio button.value...&#x27;, this.frmContact.get(&#x27;flag&#x27;).value);
-    // console.log(&#x27;this.flag...&#x27;, this.frmContact.get(&#x27;flag&#x27;).value);
+  editIyaiContacts(){
+    // console.log(&quot;editIyaiContacts-this.editFrmContacts...&quot;,this.editFrmContacts);
 
-    /*
-    - search if contact exist before allowing user to add new contact.
-    - if the contact already exists, show the user
-    - and cancel the &quot;add contact&quot; operation
-    [4/30/2019]
-    */
-
-    let vMongo &#x3D; this.frmContact.get(&#x27;flag&#x27;).value;
-
-    if (this.frmContact.status &#x3D;&#x3D;&#x3D; &#x27;VALID&#x27;) {
-      switch(vMongo){
-        case &#x27;mongo&#x27;:
-        this.cntService.addContact(this.frmContact.value);
-        // this.contact &#x3D; this.frmContact.value;
-        // console.log(&#x27;this.contact...&#x27;,this.contact);
-        // console.log(&#x27;this.frmContact.value...&#x27;,this.frmContact.value);
-        break;
-        case &#x27;memory&#x27;:
-        localStorage.setItem(&#x27;contact&#x27;, JSON.stringify(this.frmContact.value));
-        console.log(&#x27;memory contact data...&#x27;,localStorage.getItem(&#x27;contact&#x27;));
-        break;
-      }
-      // console.log(&#x27;Contact form data was submitted.&#x27;);
-    } else {
-      alert(&#x60;Unable to submit form!\nCheck what you entered. Correct fields turn gray.&#x60;);
-    }
+    this.editService.editContact(this.editFrmContacts.value);
   }
-};
+
+}
 </code></pre>
     </div>
 
     <div class="tab-pane fade " id="c-templateData">
-        <pre class="line-numbers"><code class="language-html">&lt;form [formGroup]&#x3D;&quot;frmContact&quot; (ngSubmit)&#x3D;&quot;postIyaiContacts()&quot; class&#x3D;&quot;w3-container form&quot;&gt;
+        <pre class="line-numbers"><code class="language-html">&lt;form [formGroup]&#x3D;&quot;editFrmContacts&quot; (ngSubmit)&#x3D;&quot;editIyaiContacts()&quot; class&#x3D;&quot;w3-container form&quot;&gt;
   &lt;h1&gt;iyai+ Contacts&lt;/h1&gt;
   &lt;p&gt;&lt;i&gt;Input user information to update the iyai contact list.&lt;/i&gt;&lt;/p&gt;
 
@@ -595,7 +573,9 @@ createForm(){
       placeholder&#x3D;&quot;Enter Full Name...&quot;
       required
       class&#x3D;&quot;w3-input w3-border w3-round&quot;
+      (dblclick)&#x3D;&quot;searchCnt()&quot;
     /&gt;&lt;/label&gt;&lt;br /&gt;
+    *&lt;i&gt;double click the name to show matching contact.&lt;/i&gt;
 
     &lt;label for&#x3D;&quot;nmPref&quot;&gt;Preferred Name (nickname):
     &lt;input
@@ -648,7 +628,7 @@ createForm(){
     &lt;input
       type&#x3D;&quot;url&quot;
       formControlName&#x3D;&quot;orgWeb&quot;
-      placeholder&#x3D;&quot;Enter website address ( https://www.example.com )...&quot;
+      placeholder&#x3D;&quot;Enter website address ( www.example.com )...&quot;
       class&#x3D;&quot;w3-input w3-border w3-round&quot;
     /&gt;&lt;/label&gt;&lt;br /&gt;
   &lt;/fieldset&gt;
@@ -696,7 +676,7 @@ createForm(){
       pattern&#x3D;&quot;[a-z0-9!#$%&amp;&#x27;*+/&#x3D;?^_&#x60;{|}~-]+(?:\.[a-z0-9!#$%&amp;&#x27;*+/&#x3D;?^_&#x60;{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?&quot;
       formControlName&#x3D;&quot;emOther&quot;
       placeholder&#x3D;&quot;Enter other/alternate email...&quot;
-      title&#x3D;&quot;format like an email jDoe@email.com, all lowercase&quot;
+      title&#x3D;&quot;format like an email jDoe@email.com&quot;
       class&#x3D;&quot;w3-input w3-border w3-round&quot;
     /&gt;&lt;/label&gt;
     &lt;br /&gt;
@@ -814,27 +794,21 @@ createForm(){
     /&gt;&lt;/label&gt;
     &lt;br /&gt;
   &lt;/fieldset&gt;
-
+&lt;!--
   &lt;input type&#x3D;&quot;radio&quot; class&#x3D;&quot;w3-radio&quot; formControlName&#x3D;&quot;flag&quot; value&#x3D;&quot;mongo&quot; /&gt;local MongoDB&lt;br&gt;
-  &lt;input type&#x3D;&quot;radio&quot; class&#x3D;&quot;w3-radio&quot; formControlName&#x3D;&quot;flag&quot; value&#x3D;&quot;memory&quot; /&gt;in memory(test mode)&lt;br&gt;
+  &lt;input type&#x3D;&quot;radio&quot; class&#x3D;&quot;w3-radio&quot; formControlName&#x3D;&quot;flag&quot; value&#x3D;&quot;memory&quot; /&gt;in memory(test mode)&lt;br&gt; --&gt;
 
   &lt;br /&gt;
-  &lt;input type&#x3D;&quot;submit&quot; class&#x3D;&quot;w3-button w3-blue w3-round w3-ripple&quot; /&gt;
+  &lt;input type&#x3D;&quot;submit&quot; class&#x3D;&quot;w3-button w3-blue w3-round w3-ripple&quot; value&#x3D;&quot;Save changes&quot; /&gt;
 &lt;/form&gt;
-&lt;!--
-Changes &quot;To Do&quot; for this component:
- -  Add ability to change company name. Replace &quot;iyai+&quot; with user-input &#x3D; User/Company.
- - make the form look better. It is too long and confusing as is.
- --&gt;
 </code></pre>
     </div>
 
     <div class="tab-pane fade " id="c-styleData">
                 <p class="comment">
-                    <code>./contact-form.component.css</code>
+                    <code>./edit.component.css</code>
                 </p>
-                <pre class="line-numbers"><code class="language-scss">
-</code></pre>
+                <pre class="line-numbers"><code class="language-scss"></code></pre>
     </div>
 
     <div class="tab-pane fade " id="c-tree">
@@ -862,10 +836,10 @@ Changes &quot;To Do&quot; for this component:
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><form [formGroup]="frmContact" (ngSubmit)="postIyaiContacts()" class="w3-container form">  <h1>iyai+ Contacts</h1>  <p><i>Input user information to update the iyai contact list.</i></p>  <fieldset>    <legend>Name details</legend>    <label for="nmFull">Full Name:    <input      type="text"      formControlName="nmFull"      placeholder="Enter Full Name..."      required      class="w3-input w3-border w3-round"    /></label><br />    <label for="nmPref">Preferred Name (nickname):    <input      type="text"      formControlName="nmPref"      placeholder="Enter Preferred Name..."      required      class="w3-input w3-border w3-round"    /></label><br />  </fieldset>  <fieldset>    <legend>Organization details</legend>    <label for="orgTitle">Title:    <input      type="text"      formControlName="orgTitle"      placeholder="Enter Title at Organization..."      class="w3-input w3-border w3-round"    /></label>    <br />    <label for="org">Organization:    <input      type="text"      formControlName="org"      placeholder="Enter Name of Organization..."      class="w3-input w3-border w3-round"    /></label><br />    <label for="orgStatus">iyai+ status:    <input      type="text"      formControlName="orgStatus"      placeholder="Enter iyai status..."      required      list="iyaiStatus"      class="w3-input w3-border w3-round"    />    <datalist id="iyaiStatus">      <option value="Board Member"> </option>      <option value="Partner"> </option>      <option value="Donor"> </option>    </datalist>  </label>    <br />    <label for="orgWeb">Business Website:    <input      type="url"      formControlName="orgWeb"      placeholder="Enter website address ( https://www.example.com )..."      class="w3-input w3-border w3-round"    /></label><br />  </fieldset>  <fieldset>    <legend>Street Address details</legend>    <label for="addrHome">Home Address:    <input      type="text"      formControlName="addrHome"      placeholder="Enter Home address..."      title="EXAMPLE: 4321 Constellation Dr, Fort Collins, CO 98765"      class="w3-input w3-border w3-round"    /></label>    <br />    <label for="addrMail">Mailing/Business Address:    <input      type="text"      formControlName="addrMail"      placeholder="Enter Mailing address..."      title="EXAMPLE:  8765 Cedar St, Berkeley, CA 43210"      class="w3-input w3-border w3-round"    /></label>    <br />  </fieldset>  <fieldset>    <legend>Email details</legend>    <label for="emIyai">Email "iyai+":    <input      type="email"      formControlName="emIyai"      placeholder="Enter iyai email..."      title="format like an email jDoe@email.com"      class="w3-input w3-border w3-round"    /></label>    <br />    <label for="emOther">Email "other":    <input      type="email"      pattern="[a-z0-9!#$%&\'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&\'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?"      formControlName="emOther"      placeholder="Enter other/alternate email..."      title="format like an email jDoe@email.com, all lowercase"      class="w3-input w3-border w3-round"    /></label>    <br />    <label for="emPref">Email Preferred:    <input      type="email"      pattern="[a-z0-9!#$%&\'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&\'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?"      formControlName="emPref"      placeholder="Enter Preferred email..."      required      title="format like an email jDoe@email.com"      class="w3-input w3-border w3-round"    /></label>    <br />  </fieldset>  <fieldset>    <legend>Phone Number details</legend>    <label for="phIyai">Phone Number "iyai+":    <input      type="tel"      formControlName="phIyai"      placeholder="Enter iyai phone number..."      pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"      title="EXAMPLE: 123-456-7890"      class="w3-input w3-border w3-round"    /></label>    <br />    <label for="phMob">Phone Number "mobile":    <input      type="tel"      formControlName="phMob"      placeholder="Enter Mobile Phone Number..."      pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"      title="EXAMPLE: 123-456-7890"      class="w3-input w3-border w3-round"    /></label>    <br />    <label for="phHome">Phone Number "home":    <input      type="tel"      formControlName="phHome"      placeholder="Enter Home Phone Number..."      pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"      title="EXAMPLE: 123-456-7890"      class="w3-input w3-border w3-round"    /></label>    <br />    <label for="phOff">Phone Number "office":    <input      type="tel"      formControlName="phOff"      placeholder="Enter Office Phone Number..."      pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"      title="EXAMPLE: 123-456-7890"      class="w3-input w3-border w3-round"    /></label>    <br />    <label for="phFax">Phone Number "fax":    <input      type="tel"      formControlName="phFax"      placeholder="Enter Fax Phone Number..."      pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"      title="EXAMPLE: 123-456-7890"      class="w3-input w3-border w3-round"    /></label>    <br />    <label for="phPref">Phone Number Preferred:    <input      type="tel"      formControlName="phPref"      placeholder="Enter Preferred Phone Number..."      pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"      title="EXAMPLE: 123-456-7890"      class="w3-input w3-border w3-round"    /></label>    <br />  </fieldset>  <fieldset>    <legend>Admin Supoort details</legend>    <label for="supName">Admin Support Name:    <input      type="text"      formControlName="supName"      placeholder="Enter Admin Support Full Name..."      class="w3-input w3-border w3-round"    /></label>    <br />    <label for="supEmail">Admin Support Email:    <input      type="text"      formControlName="supEmail"      placeholder="Enter Admin Support Email..."      class="w3-input w3-border w3-round"    /></label>    <br />    <label for="supPhone">Admin Support Phone Number:    <input      type="tel"      formControlName="supPhone"      placeholder="Enter Admin Support Phone Number...123-456-7890"      pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"      title="EXAMPLE: 123-456-7890"      class="w3-input w3-border w3-round"    /></label>    <br />  </fieldset>  <input type="radio" class="w3-radio" formControlName="flag" value="mongo" />local MongoDB<br>  <input type="radio" class="w3-radio" formControlName="flag" value="memory" />in memory(test mode)<br>  <br />  <input type="submit" class="w3-button w3-blue w3-round w3-ripple" /></form><!--Changes "To Do" for this component: -  Add ability to change company name. Replace "iyai+" with user-input = User/Company. - make the form look better. It is too long and confusing as is. --></div>'
+        var COMPONENT_TEMPLATE = '<div><form [formGroup]="editFrmContacts" (ngSubmit)="editIyaiContacts()" class="w3-container form">  <h1>iyai+ Contacts</h1>  <p><i>Input user information to update the iyai contact list.</i></p>  <fieldset>    <legend>Name details</legend>    <label for="nmFull">Full Name:    <input      type="text"      formControlName="nmFull"      placeholder="Enter Full Name..."      required      class="w3-input w3-border w3-round"      (dblclick)="searchCnt()"    /></label><br />    *<i>double click the name to show matching contact.</i>    <label for="nmPref">Preferred Name (nickname):    <input      type="text"      formControlName="nmPref"      placeholder="Enter Preferred Name..."      required      class="w3-input w3-border w3-round"    /></label><br />  </fieldset>  <fieldset>    <legend>Organization details</legend>    <label for="orgTitle">Title:    <input      type="text"      formControlName="orgTitle"      placeholder="Enter Title at Organization..."      class="w3-input w3-border w3-round"    /></label>    <br />    <label for="org">Organization:    <input      type="text"      formControlName="org"      placeholder="Enter Name of Organization..."      class="w3-input w3-border w3-round"    /></label><br />    <label for="orgStatus">iyai+ status:    <input      type="text"      formControlName="orgStatus"      placeholder="Enter iyai status..."      required      list="iyaiStatus"      class="w3-input w3-border w3-round"    />    <datalist id="iyaiStatus">      <option value="Board Member"> </option>      <option value="Partner"> </option>      <option value="Donor"> </option>    </datalist>  </label>    <br />    <label for="orgWeb">Business Website:    <input      type="url"      formControlName="orgWeb"      placeholder="Enter website address ( www.example.com )..."      class="w3-input w3-border w3-round"    /></label><br />  </fieldset>  <fieldset>    <legend>Street Address details</legend>    <label for="addrHome">Home Address:    <input      type="text"      formControlName="addrHome"      placeholder="Enter Home address..."      title="EXAMPLE: 4321 Constellation Dr, Fort Collins, CO 98765"      class="w3-input w3-border w3-round"    /></label>    <br />    <label for="addrMail">Mailing/Business Address:    <input      type="text"      formControlName="addrMail"      placeholder="Enter Mailing address..."      title="EXAMPLE:  8765 Cedar St, Berkeley, CA 43210"      class="w3-input w3-border w3-round"    /></label>    <br />  </fieldset>  <fieldset>    <legend>Email details</legend>    <label for="emIyai">Email "iyai+":    <input      type="email"      formControlName="emIyai"      placeholder="Enter iyai email..."      title="format like an email jDoe@email.com"      class="w3-input w3-border w3-round"    /></label>    <br />    <label for="emOther">Email "other":    <input      type="email"      pattern="[a-z0-9!#$%&\'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&\'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?"      formControlName="emOther"      placeholder="Enter other/alternate email..."      title="format like an email jDoe@email.com"      class="w3-input w3-border w3-round"    /></label>    <br />    <label for="emPref">Email Preferred:    <input      type="email"      pattern="[a-z0-9!#$%&\'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&\'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?"      formControlName="emPref"      placeholder="Enter Preferred email..."      required      title="format like an email jDoe@email.com"      class="w3-input w3-border w3-round"    /></label>    <br />  </fieldset>  <fieldset>    <legend>Phone Number details</legend>    <label for="phIyai">Phone Number "iyai+":    <input      type="tel"      formControlName="phIyai"      placeholder="Enter iyai phone number..."      pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"      title="EXAMPLE: 123-456-7890"      class="w3-input w3-border w3-round"    /></label>    <br />    <label for="phMob">Phone Number "mobile":    <input      type="tel"      formControlName="phMob"      placeholder="Enter Mobile Phone Number..."      pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"      title="EXAMPLE: 123-456-7890"      class="w3-input w3-border w3-round"    /></label>    <br />    <label for="phHome">Phone Number "home":    <input      type="tel"      formControlName="phHome"      placeholder="Enter Home Phone Number..."      pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"      title="EXAMPLE: 123-456-7890"      class="w3-input w3-border w3-round"    /></label>    <br />    <label for="phOff">Phone Number "office":    <input      type="tel"      formControlName="phOff"      placeholder="Enter Office Phone Number..."      pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"      title="EXAMPLE: 123-456-7890"      class="w3-input w3-border w3-round"    /></label>    <br />    <label for="phFax">Phone Number "fax":    <input      type="tel"      formControlName="phFax"      placeholder="Enter Fax Phone Number..."      pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"      title="EXAMPLE: 123-456-7890"      class="w3-input w3-border w3-round"    /></label>    <br />    <label for="phPref">Phone Number Preferred:    <input      type="tel"      formControlName="phPref"      placeholder="Enter Preferred Phone Number..."      pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"      title="EXAMPLE: 123-456-7890"      class="w3-input w3-border w3-round"    /></label>    <br />  </fieldset>  <fieldset>    <legend>Admin Supoort details</legend>    <label for="supName">Admin Support Name:    <input      type="text"      formControlName="supName"      placeholder="Enter Admin Support Full Name..."      class="w3-input w3-border w3-round"    /></label>    <br />    <label for="supEmail">Admin Support Email:    <input      type="text"      formControlName="supEmail"      placeholder="Enter Admin Support Email..."      class="w3-input w3-border w3-round"    /></label>    <br />    <label for="supPhone">Admin Support Phone Number:    <input      type="tel"      formControlName="supPhone"      placeholder="Enter Admin Support Phone Number...123-456-7890"      pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"      title="EXAMPLE: 123-456-7890"      class="w3-input w3-border w3-round"    /></label>    <br />  </fieldset><!--  <input type="radio" class="w3-radio" formControlName="flag" value="mongo" />local MongoDB<br>  <input type="radio" class="w3-radio" formControlName="flag" value="memory" />in memory(test mode)<br> -->  <br />  <input type="submit" class="w3-button w3-blue w3-round w3-ripple" value="Save changes" /></form></div>'
     var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'ContactFormComponent', 'selector': 'app-contact-form'},{'name': 'DeleteCntComponent', 'selector': 'app-delete-cnt'},{'name': 'DisplayAllComponent', 'selector': 'app-display-all'},{'name': 'EditComponent', 'selector': 'app-edit'},{'name': 'ImportZohoComponent', 'selector': 'app-import-zoho'},{'name': 'PageNotFoundComponent', 'selector': 'app-page-not-found'},{'name': 'SearchComponent', 'selector': 'app-search'}];
     var DIRECTIVES = [];
-    var ACTUAL_COMPONENT = {'name': 'ContactFormComponent'};
+    var ACTUAL_COMPONENT = {'name': 'EditComponent'};
 </script>
 <script src="../js/tree.js"></script>
 
@@ -899,7 +873,7 @@ Changes &quot;To Do&quot; for this component:
        <script>
             var COMPODOC_CURRENT_PAGE_DEPTH = 1;
             var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
-            var COMPODOC_CURRENT_PAGE_URL = 'ContactFormComponent.html';
+            var COMPODOC_CURRENT_PAGE_URL = 'EditComponent.html';
        </script>
 
        <script src="../js/libs/custom-elements.min.js"></script>

@@ -18,7 +18,7 @@ export class ImportZohoComponent implements OnInit {
   data: any;
   unSafeHtml: string;
   vSafeHtml: string;
-  newHdr: any; // db save code
+  newHdr: any;
 
   constructor(private fb: FormBuilder, private sanitizer: DomSanitizer, private importService: CntMongoService) { }
 
@@ -47,8 +47,16 @@ export class ImportZohoComponent implements OnInit {
         })
         // console.log('convertStr2Arr() returns newLineAsArr...', newLineAsArr);
       }
-      return newLineAsArr; //This has all the lines including header as index 0.
+      return newLineAsArr; //This has all the lines. header as index 0.
     }
+
+    /**
+     * this function is to convert properly formatted array data into a JSON object
+     * for saving to MongoDB and generally passing around the application as needed.
+     *
+     * @param arrHeaders
+     * @param arrData
+     */
     function createContactObj(arrHeaders, arrData) {
       let newObj = {};
       let newHeader = '';

@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>basic documentation</title>
+        <title>iyai-contacts documentation</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -13,7 +13,7 @@
     <body>
 
         <div class="navbar navbar-default navbar-fixed-top visible-xs">
-            <a href="../" class="navbar-brand">basic documentation</a>
+            <a href="../" class="navbar-brand">iyai-contacts documentation</a>
             <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
         </div>
 
@@ -215,9 +215,13 @@ export class AppComponent {
 &lt;button routerLink&#x3D;&quot;displayAll&quot; class&#x3D;&quot;w3-button w3-round w3-ripple&quot;&gt;displayAll&lt;/button&gt;
 &lt;button routerLink&#x3D;&quot;importZoho&quot; class&#x3D;&quot;w3-button w3-round w3-ripple&quot;&gt;importZoho&lt;/button&gt;
 &lt;button routerLink&#x3D;&quot;search&quot; class&#x3D;&quot;w3-button w3-round w3-ripple&quot;&gt;search&lt;/button&gt;
+&lt;button routerLink&#x3D;&quot;editContact&quot; class&#x3D;&quot;w3-button w3-round w3-ripple&quot;&gt;Edit Contact&lt;/button&gt;
+&lt;button routerLink&#x3D;&quot;deleteContact&quot; class&#x3D;&quot;w3-button w3-round w3-ripple&quot;&gt;Delete Contact&lt;/button&gt;
 &lt;/nav&gt;
 
-&lt;router-outlet&gt;&lt;/router-outlet&gt;
+&lt;div&gt;
+  &lt;router-outlet&gt;&lt;/router-outlet&gt;
+&lt;/div&gt;
 </code></pre>
     </div>
 
@@ -253,8 +257,8 @@ export class AppComponent {
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><div class="w3-center">  <h1>    Welcome to iayi+ <br>    {{ title }}!  </h1>  <img width="60%" alt="iyai+ Logo" src="https://www.iyai.org/wp-content/uploads/2018/07/iyai-h4.jpg"></div><nav class="w3-bar w3-center w3-blue">  <button routerLink="contactForm" class="w3-button w3-round w3-ripple">Create Contact</button><button routerLink="displayAll" class="w3-button w3-round w3-ripple">displayAll</button><button routerLink="importZoho" class="w3-button w3-round w3-ripple">importZoho</button><button routerLink="search" class="w3-button w3-round w3-ripple">search</button></nav><router-outlet></router-outlet></div>'
-    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'ContactFormComponent', 'selector': 'app-contact-form'},{'name': 'DisplayAllComponent', 'selector': 'app-display-all'},{'name': 'ImportZohoComponent', 'selector': 'app-import-zoho'},{'name': 'PageNotFoundComponent', 'selector': 'app-page-not-found'},{'name': 'SearchComponent', 'selector': 'app-search'}];
+        var COMPONENT_TEMPLATE = '<div><div class="w3-center">  <h1>    Welcome to iayi+ <br>    {{ title }}!  </h1>  <img width="60%" alt="iyai+ Logo" src="https://www.iyai.org/wp-content/uploads/2018/07/iyai-h4.jpg"></div><nav class="w3-bar w3-center w3-blue">  <button routerLink="contactForm" class="w3-button w3-round w3-ripple">Create Contact</button><button routerLink="displayAll" class="w3-button w3-round w3-ripple">displayAll</button><button routerLink="importZoho" class="w3-button w3-round w3-ripple">importZoho</button><button routerLink="search" class="w3-button w3-round w3-ripple">search</button><button routerLink="editContact" class="w3-button w3-round w3-ripple">Edit Contact</button><button routerLink="deleteContact" class="w3-button w3-round w3-ripple">Delete Contact</button></nav><div>  <router-outlet></router-outlet></div></div>'
+    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'ContactFormComponent', 'selector': 'app-contact-form'},{'name': 'DeleteCntComponent', 'selector': 'app-delete-cnt'},{'name': 'DisplayAllComponent', 'selector': 'app-display-all'},{'name': 'EditComponent', 'selector': 'app-edit'},{'name': 'ImportZohoComponent', 'selector': 'app-import-zoho'},{'name': 'PageNotFoundComponent', 'selector': 'app-page-not-found'},{'name': 'SearchComponent', 'selector': 'app-search'}];
     var DIRECTIVES = [];
     var ACTUAL_COMPONENT = {'name': 'AppComponent'};
 </script>

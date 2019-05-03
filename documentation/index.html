@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>basic documentation</title>
+        <title>iyai-contacts documentation</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -13,7 +13,7 @@
     <body>
 
         <div class="navbar navbar-default navbar-fixed-top visible-xs">
-            <a href="./" class="navbar-brand">basic documentation</a>
+            <a href="./" class="navbar-brand">iyai-contacts documentation</a>
             <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
         </div>
 
@@ -30,19 +30,32 @@
                <div class="content getting-started">
                    <div class="content-data">
 
-<h1 id="iyaicontact---basic">&quot;iyaiContact&quot; - basic</h1>
-<p>version 0.1.0 or <a href="https://badge.fury.io/">version badge</a></p>
+<h1 id="iyaicontact-contacts-and-connections">&quot;iyaiContact, Contacts and Connections&quot;</h1>
+<p><a href="https://semver.org/">version 0.1.0</a></p>
+<p><a href="https://badge.fury.io/hooks/github">version badge</a></p>
+<p>https://badge.fury.io/hooks/github</p>
+<p>iyai Contact Management System</p>
 <h2 id="getting-started">Getting Started</h2>
-<p>Coding iyai contact CMS. Input contact information with a web app. This is a practice project. My end goal is to use origami for the iyai CMS but I ran into some knowledge issues (things I dind&#39;t know how to do), so I decided to make an angular site while I waited. This is it.</p>
-<h3 id="what-the-app-should-do">What the app should do?</h3>
+<p>Go to Heroku and use the demo... User is able to add contact information with a web form.</p>
+<p><strong>Run app locally on an Express web server.</strong></p>
 <ul>
-<li>Start with <code>npm start</code> to use mongoDB. must run an <code>npm run build</code> to update files.</li>
+<li>Start MongoDB</li>
+<li>Run an <code>npm run build</code> to compile files.</li>
+<li>Start app and server with <code>npm start</code></li>
+<li>Navigate to <code>http://localhost:4200/</code></li>
 </ul>
-<p>Allows you to create contacts, display all contacts, search for one contact, and import contacts from Zoho.</p>
-<p>TO DO:
-- see &quot;iyaiContact-Software Design Document.md&quot; for details of project to do&#39;s</p>
+<h3 id="what-the-app-should-do">What the app should do?</h3>
+<p>This was created to solve my contact management issues. Which seems to be an identity issue the more I think about it. Most of the contact managers charge for their service. There is no charge to use this software.</p>
+<ul>
+<li>Use webform to <strong>input new contact information</strong> then save with &quot;Submit contact data&quot; button.</li>
+<li><strong>Search for contacts</strong> using part of the name, ie first or last name will find all matching that. Click &quot;Search&quot; button to display results</li>
+<li><strong>Show &quot;All&quot; contacts</strong> in database by clicking the similar button.</li>
+<li><strong>Import Zoho export files</strong> clicking &quot;Choose File&quot; button. This will display the raw data being imported and simultaneously save the data to MongoDB.</li>
+<li><strong>Export contacts:</strong> select contacts to be exported to email provider, phone contact manager, and file-spreadsheet (spreadsheet is the most important because that is how the lay-person views most data).</li>
+</ul>
+<p><em>TO DO: see &quot;iyaiContact-Software Design Document.md&quot; for details of project To Do&#39;s</em> (C:\Users\trewa\Documents\CodingWorkshop\iyaiContact-angular\0-Dev FILES-iyaiContact-angular\iyaiContact-Software Design Document.md)</p>
 <h2 id="credit">CREDIT</h2>
-<p>[Bishop Fox - Cybersecurity Style Guide - v1.1] (https://www.bishopfox.com/blog/2018/02/hello-world-introducing-the-bishop-fox-cybersecurity-style-guide/)</p>
+<p><a href="https://www.bishopfox.com/blog/2018/02/hello-world-introducing-the-bishop-fox-cybersecurity-style-guide/">Bishop Fox - Cybersecurity Style Guide - v1.1</a></p>
 <h3 id="built-with">Built With</h3>
 <ul>
 <li><p>This project was generated with <a href="https://github.com/angular/angular-cli">Angular CLI</a> version 7.1.4.</p>
@@ -53,39 +66,31 @@
 </li>
 <li><p><a href="https://github.com/expressjs/express">ExpressJS</a> web server and middleware</p>
 </li>
-<li><p>using dotenv from npm to manage environment variables</p>
+<li><p><a href="https://mongoosejs.com/">Mongoose</a></p>
 </li>
-<li><p>using cors</p>
+<li><p><a href="https://github.com/expressjs/morgan">morgan</a> for logging</p>
 </li>
-<li><p>using mongoose</p>
+<li><p><a href="https://expressjs.com/">express</a> Web Server</p>
 </li>
-<li><p>morgan for logging</p>
+<li><p><a href="https://compodoc.app/">compodoc</a> Code Documenter</p>
 </li>
-<li><p>multer for reading form. Might not need it with Angular</p>
+<li><p><a href="https://editorconfig.org/">editorConfig</a> VScode extension will read this file and attempt to add styling as an override. Heavy handed but a great way to make code conform to my coding style.</p>
+</li>
+<li><p><a href="https://www.npmjs.com/package/file-saver">file-saver</a> simply export to file process, limited to blob max size.</p>
+</li>
+<li><p><a href="https://www.npmjs.com/package/dotenv">dotenv</a> from npm to manage environment variables</p>
 </li>
 <li><p>rxjs compat</p>
 </li>
-<li><p>express</p>
-</li>
-<li><p>SHOULD ADD compodoc</p>
+<li><p>using cors</p>
 </li>
 </ul>
-<h2 id="contributions">CONTRIBUTIONS</h2>
-<p>Solo project so far. Code and graphic design contributors are welcome and encouraged to help. Please read <a href="https://gist.github.com/PurpleBooth/b24679402957c63ec426">CONTRIBUTING.md</a> for details on our code of conduct, and the process for submitting pull requests to me. (I will copy their instructions when I get time, but for now ditto to what they say)</p>
-<h3 id="commit-titles">Commit Titles</h3>
-<p>[INITIALIZE] -  getting started setting up the app
-[DEBUG] -       debugging
-[UPDATE] -      update the code
-[ADD] -         adding something new
-[DELETE] -      delete code
-[REFACTOR] -    optimize code</p>
-<h2 id="versioning">Versioning</h2>
-<p>We use <a href="http://semver.org/">SemVer</a> for versioning. For the versions available, see the <a href="https://github.com/BART-CLI/project/tags">tags on this repository</a>.</p>
-<h2 id="authors">Authors</h2>
+<h3 id="contributions">CONTRIBUTIONS</h3>
+<p>Solo project so far. Code and graphic design contributors are welcome and encouraged to help. Please read <a href="CONTRIBUTING.md">CONTRIBUTING.md</a> for details on our code of conduct, and the process for submitting pull requests to me. </p>
+<h3 id="authors">Authors</h3>
 <ul>
 <li><strong>Tre&#39; Grisby</strong> - <em>Initial work</em> - <a href="https://github.com/trewaters">trewaters</a></li>
 </ul>
-<p>See also the list of <a href="https://github.com/BART-CLI/project/contributors">contributors</a> who participated in this project.</p>
 <h2 id="license">License</h2>
 <p>This project is licensed under the MIT License - see the <a href="LICENSE.md">LICENSE.md</a> file for details</p>
 <h2 id="acknowledgments">Acknowledgments</h2>
@@ -105,8 +110,23 @@
 <p>Run <code>ng test</code> to execute the unit tests via <a href="https://karma-runner.github.io">Karma</a>.</p>
 <h2 id="running-end-to-end-tests">Running end-to-end tests</h2>
 <p>Run <code>ng e2e</code> to execute the end-to-end tests via <a href="http://www.protractortest.org/">Protractor</a>.</p>
+<h2 id="angular-linting">Angular linting</h2>
+<p>Angular CLI has support for codelyzer. In order to validate your code with CLI and the custom Angular specific rules just use:
+<code>ng new codelyzer</code>
+<code>ng lint</code>
+Note that by default all components are aligned with the style guide so you won&#39;t see any errors in the console.</p>
 <h2 id="further-help">Further help</h2>
 <p>To get more help on the Angular CLI use <code>ng help</code> or go check out the <a href="https://github.com/angular/angular-cli/blob/master/README.md">Angular CLI README</a>.</p>
+<h4 id="notes">NOTES</h4>
+<p>the folders in this are: 
+- <strong>&quot;basic&quot;</strong> is built with the Angular CLI.
+  - <em>[4/17/2019]...I am only working on this one right now.</em>
+  - <em>[4/18/2019]... adding form submission. Made my form, with css for validity, and the data object.</em>
+  - <em>[4/24/2019]... Using a tutorial to help me structure my app better. I added folders for COMPONENTS etc. moved the contact to it&#39;s own model. importing the contact model into the contact form for adding data.</em>
+  -<em>[4/26/2019]... made all the functionality work. It is test data. Now I am converting it to work with MongoDB. Enable adding all the fields and data for a real contact.</em>
+  -<em>[4/28/2019]... this is coming along well. I am able to import zoho csv data. It isn&#39;t perfect but I can understand what is being imported. It has extra bits like quotes that were not removed. I have all the real fields showing for the data that will be input and retrieved. I don&#39;t have the metadata set up yet. Like dated created being saved.</em>
+  -<em>[5/1/2019]... I have been working on this a little everyday. Today it is a complete draft. All the functionality is coded into the application. Now it needs to refined and improved upon.</em>
+  -<em>[]...</em></p>
 
 
 

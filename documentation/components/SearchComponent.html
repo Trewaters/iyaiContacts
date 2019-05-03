@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>basic documentation</title>
+        <title>iyai-contacts documentation</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -13,7 +13,7 @@
     <body>
 
         <div class="navbar navbar-default navbar-fixed-top visible-xs">
-            <a href="../" class="navbar-brand">basic documentation</a>
+            <a href="../" class="navbar-brand">iyai-contacts documentation</a>
             <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
         </div>
 
@@ -505,7 +505,7 @@ export class SearchComponent implements OnInit {
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
         var COMPONENT_TEMPLATE = '<div><form  [formGroup]="frmSearch"  (ngSubmit)="searchContacts()"  class="w3-container">  <fieldset>    <legend>Search for Contacts</legend>    <label for="searchCon"      >use entire name:      <br>      <input        type="text"        name="searchCon"        formControlName="searchItem"        placeholder="Search..."        class="w3-input w3-border"      />      <button type="submit" class="w3-button w3-blue w3-round w3-ripple">        <i class="fa fa-search"></i>      </button>    </label>  </fieldset></form><table class="w3-table-all w3-hoverable w3-hover-aqua">  <thead>  <tr class="w3-blue">      <td>Full Name</td>      <td>Email Pref</td>      <td>Document Version</td>  </tr>  </thead>  <tbody>      <tr *ngFor="let contact of contacts">          <td>{{ contact.nmFull }}</td>          <td>{{ contact.emPref }}</td>          <td>{{ contact.version }}</td>      </tr>  </tbody></table></div>'
-    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'ContactFormComponent', 'selector': 'app-contact-form'},{'name': 'DisplayAllComponent', 'selector': 'app-display-all'},{'name': 'ImportZohoComponent', 'selector': 'app-import-zoho'},{'name': 'PageNotFoundComponent', 'selector': 'app-page-not-found'},{'name': 'SearchComponent', 'selector': 'app-search'}];
+    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'ContactFormComponent', 'selector': 'app-contact-form'},{'name': 'DeleteCntComponent', 'selector': 'app-delete-cnt'},{'name': 'DisplayAllComponent', 'selector': 'app-display-all'},{'name': 'EditComponent', 'selector': 'app-edit'},{'name': 'ImportZohoComponent', 'selector': 'app-import-zoho'},{'name': 'PageNotFoundComponent', 'selector': 'app-page-not-found'},{'name': 'SearchComponent', 'selector': 'app-search'}];
     var DIRECTIVES = [];
     var ACTUAL_COMPONENT = {'name': 'SearchComponent'};
 </script>
