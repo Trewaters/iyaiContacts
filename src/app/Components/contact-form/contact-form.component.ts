@@ -13,7 +13,7 @@ import { CntMongoService } from 'src/app/Services/cnt-mongo.service';
 export class ContactFormComponent implements OnInit {
 
   contact: cntIyai = new cntIyai();
-  flag: String ='';
+  flag: String ='test';
 
   frmContact: FormGroup;
 
@@ -22,6 +22,7 @@ export class ContactFormComponent implements OnInit {
   }
 
   ngOnInit() {
+    console.log('this.flag...', this.flag)
   }
 
   /**
