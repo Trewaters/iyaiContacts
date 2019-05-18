@@ -1,12 +1,6 @@
 # "iyaiContact, Contacts and Connections"
 
-[version 0.1.0](https://semver.org/)
-
-[version badge](https://badge.fury.io/hooks/github)
-
-https://badge.fury.io/hooks/github
-
-
+![iyaiContacts version](https://img.shields.io/github/package-json/v/trewaters/iyaiContacts.svg)
 
 iyai Contact Management System
 
